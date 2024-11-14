@@ -1,0 +1,12 @@
+      
+Logika aritmatika dalam pemrogramman
+
+
+//x =  Math.round(x); // pembulatan angka
+      //x = Math.floor(x); // pembulatan ke bawah
+      //x = Math.ceil(x); //pembulatan angka  ke atas
+      //x = Math.pow(x, 3); //penghitungan pangkat
+      //x = Math.sqrt(x) // akar kuadrat
+      //x = Math.abs(x); //mengubah nilai negatif menjadi positiv
+      //maksimal = Math.max(x,y,z); // mencari nilai terbesar
+      //minimum = Math.min(x,y,z); // mencari nilai terkecil

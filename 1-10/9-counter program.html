@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter program</title>
+  </head>
+  <body>
+    <style>
+    #hitungLabel {
+        display: block;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .containerButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    </style>
+
+    <label id="hitungLabel">0</label><br />
+    <div class="containerButton">
+        <button button id="penguranganBtn">Pengurangan</button>
+        <button id="resetBtn">reset</button>
+        <button id="penambahanBtn">penambambahan</button>
+    </div>
+    <script>
+
+        let hitung = 0
+
+        document.getElementById("penguranganBtn").onclick = function (){
+            hitung -=1;
+            document.getElementById("hitungLabel").innerHTML = hitung;
+        }
+        document.getElementById("resetBtn").onclick = function (){
+            hitung = 0;
+            document.getElementById("hitungLabel").innerHTML = hitung;
+            
+        }
+        document.getElementById("penambahanBtn").onclick = function (){
+            hitung +=1;
+            document.getElementById("hitungLabel").innerHTML = hitung;
+        
+        }
+
+
+        //innerHTML berfunsi untuk memanipulasi text yang di halaman HTML yaitu angka 0
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+Math.sqrt => pengembalian  akar dari suatu bilangan
+Math.pow => penghitungan pangkat
+
+
+c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+
+a = 3 x 3 = 9
+b = 4 x 4 = 16
+
+
+9 + 16 = 25 => akar dari 25 adalah 5

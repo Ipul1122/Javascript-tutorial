@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const</title>
+</head>
+<body>
+
+    <script>
+
+        // const = a variable that can't be changed atau sebuah variabel yang tidak dapat dirubah
+
+        /* jika memakai let pada pi, maka pi yang utama 3.14 
+            akan digantikan menjadi pi yang berisi value 420.69 
+            dan radius yang diberikan adalah 9
+            maka hasil output adalah 7572.42
+        */
+        const PI  = 3.14159;
+        let radius;
+        let lingkar;
+
+        //PI  = 420.69;
+
+        radius = window.prompt("masukkan radius dari sebuah lingkaran")
+        radius = Number(radius);
+
+        lingkar = 2 * PI  * radius;
+
+        console.log("linkar nya adalah :", lingkar);
+    </script>
+    
+</body>
+</html>

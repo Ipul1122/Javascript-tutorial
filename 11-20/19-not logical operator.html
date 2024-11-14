@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>not logical operator</title>
+  </head>
+  <body>
+    <script>
+      // ! NOT logical operator
+      // typically used to reverse a condition's boolean values
+      // true -> false, false -> true
+
+    let temp = 15;
+    
+    // jika tidak memakai (! NOT) maka kondisi diluar dingin
+    // jika memakai (! NOT) maka diluar hangat
+    if (!(temp > 0)) {
+        console.log('diluar dingin');
+    } else {
+        console.log('diluar hangat');
+    }
+    
+
+
+    let sunny = true;
+
+
+    // jika sunny tidak memakai (! NOT) dan sunny adalah true, maka hari ini cerah
+    // jika sunny memakai (! NOT) dan sunny adalah true, maka cuaca hari ini mendung
+    
+    // jika sunny tidak memakai (! NOT) dan sunny adalah false, maka hari ini mendung
+    // jika sunny meakai (! NOT) dan sunny adalah false, maka cuaca hari ini cerah
+    if (!sunny) {
+        console.log('hari ini  cerah');
+    } else {
+        console.log('hari ini mendung');
+    }
+    </script>
+  </body>
+</html>

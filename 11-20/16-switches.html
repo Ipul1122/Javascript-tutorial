@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switches</title>
+</head>
+<body>
+
+    <script>
+
+        // switch = statement that examines a value
+        //          for a match against many case clauses
+        //          More efficient that many "else if" statement
+
+        // switch = pernyataan yang menguji suatu nilai
+        // untuk pertandingan melawan banyak klausa kasus
+        // Lebih efisien dari banyak pernyataan "else if".
+        let kkm = 40;
+
+        switch (true){
+            case kkm >= 90: 
+                console.log("Sangat Bagus");
+                break;
+            case kkm >= 80: 
+                console.log("Bagus");
+                break;
+            case kkm >= 70: 
+                console.log("Cukup");
+                break;
+            case kkm >= 60: 
+                console.log("Buruk");
+                break;
+            case kkm >= 50: 
+                console.log("Sangat Buruk");
+                break;
+            default:
+                console.log(kkm, "bukan sebuah kkm");
+            }
+
+    </script>
+    
+</body>
+</html>

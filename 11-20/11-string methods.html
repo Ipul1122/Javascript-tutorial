@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string method</title>
+  </head>
+  <body>
+    <script>
+        let namaLengkap = 'Muhammad Syaifulloh';
+        let nomerTelepon = "123-4567-890";
+      console.log(namaLengkap.length); //  melihat panjang string
+      console.log(namaLengkap.charAt(0)); // melihat karakter pada index ke -
+      console.log(namaLengkap.indexOf("l")); // mencari index pertama dari huruf 
+      console.log(namaLengkap.lastIndexOf("l")); // mencari index selanjutnya dari huruf 
+      namaLengkap = namaLengkap.trim(); //  memberi spasi di awal dan akhir string
+    namaLengkap = namaLengkap.toUpperCase(); // membuat semua huruf menjadi BESAR/KAPITAL
+    namaLengkap = namaLengkap.toLowerCase(); //  membuat semua huruf jadi Kecil
+    
+        nomerTelepon = nomerTelepon.replaceAll("-", "/"); // ganti tanda "-" dengan "/
+
+        console.log(nomerTelepon);
+        console.log(namaLengkap);
+
+    </script>
+  </body>
+</html>

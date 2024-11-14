@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user input</title>
+</head>
+<body>
+    
+<label id="myLabel"> masukkan nama lu</label><br>
+<input type="text"  id="myText"><br>
+<button type="button" id="myButton">Konfirmasi</button>
+
+
+<script>
+
+// how to accept user input     
+
+// easy way with a window prompt
+
+// metoder ini melalui pop up pada halaman dan ter-input kedalam  console
+// let username = window.prompt("siapa nama lu?");
+// console.log(username);
+
+// diffuclty way html textbox
+
+let username;
+
+// memanggil element dari id myButton, ketika di klik maka akan berfungsi
+document.getElementById("myButton").onclick = function (){
+
+        //  memanggil element dari id myText untuk mengisi text
+        username = document.getElementById("myText").value;
+        // menampilkan di console ketika button suddah di klik
+        console.log(username);
+        // membuat label berubah menjadi nama yang diberikn dan ditambahkan "halo"
+        document.getElementById("myLabel").innerHTML = "halo " + username;
+}
+
+
+
+</script>
+
+</body>
+</html>

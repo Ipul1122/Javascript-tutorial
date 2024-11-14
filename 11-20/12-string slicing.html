@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string slicing</title>
+  </head>
+  <body>
+    <script>
+      // slice () extracts a section of a string
+      //          and returns it as a new string
+      //          without modifying the original string
+
+      let namaLengkap = 'Muhammad Akbar Syaifulloh';
+      let namaDepan;
+      let namaTengah;
+      let namaBelakang;
+
+      //namaDepan = namaLengkap.slice(0,9); // membiarkan index 0 sampai 9 tidak terpotong
+      //namaBelakang = namaLengkap.slice(8); // memotong huruf dari index 0 sampai index 8
+
+      namaDepan = namaLengkap.slice(0, namaLengkap.indexOf(' ')); // memotong nama belakang
+      namaTengah = namaLengkap.slice(9, namaLengkap.indexOf(' ') + 7); // memotong nama depan & belakang
+      namaBelakang = namaLengkap.slice(namaLengkap.indexOf(' ') + 7); // memotong nama depan
+
+      console.log(namaDepan);
+      console.log(namaTengah);
+      console.log(namaBelakang);
+    </script>
+  </body>
+</html>

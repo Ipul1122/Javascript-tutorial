@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>strict equality operator</title>
+  </head>
+  <body>
+    <script>
+      // = assignment operator
+      //  == comparison operator
+      // === strict equality operator
+
+      let x = '3.14';
+
+      if ((x = 3.14)) {
+        console.log('ini adalah phi');
+      } else {
+        console.log('ini bukan phi');
+      }
+
+      let y = '3.14';
+
+      if (y == 3.14) {
+        console.log('ini adalah phi');
+      } else {
+        console.log('ini bukan phi');
+      }
+
+      let z = '3.14';
+
+      if (z === 3.14) {
+        console.log('ini adalah phi');
+      } else {
+        console.log('ini bukan phi');
+      }
+
+      /* jika nilai value sama tetapi
+    metode nya berbeda akan menjadi false
+    ini adalah strict equality operator
+*/
+    </script>
+  </body>
+</html>

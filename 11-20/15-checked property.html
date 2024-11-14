@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checked property</title>
+  </head>
+  <body>
+    <label for="myCheckBox">berlangganan</label>
+    <input type="checkbox" id="myCheckBox" /><br />
+
+    <label for="visaBtn">Visa</label>
+    <input type="radio" name="card" id="visaBtn" /><br />
+    <label for="masterCardBtn">Master Card</label>
+    <input type="radio" name="card" id="masterCardBtn" /><br />
+    <label for="paypalBtn">Paypal</label>
+    <input type="radio" name="card" id="paypalBtn" /><br />
+
+    <button id="myButton">Submit</button>
+    <script>
+        // membuat fungsi ketika button HTML di klik
+    document.getElementById("myButton").onclick = function () {
+        // button myCheckBox di klik maka akan muncul output yang sesuai di if else
+        const myCheckBox = document.getElementById("myCheckBox");
+        // klik salah satu  radio button dan jika dipilih maka output akan sesuai yang di if else
+        const visaBtn = document.getElementById("visaBtn");
+        const masterCardBtn = document.getElementById("masterCardBtn");
+        const paypalBtn = document.getElementById("paypalBtn");
+
+
+        // jika button myCheckBox di klik maka gua sudah berlangganan
+        // begitu juga sebaliknya
+        if (myCheckBox.checked) {
+            console.log("lu sudah berlangganan");
+        } else {
+            console.log("lu belum berlangganan");
+        }
+
+        // memilih  metode pembayaran yang dipilih,
+        // jika sudah maka akan keluar output sesuai yang dipilih
+        if(visaBtn.checked){
+            console.log("lu bayar pake Visa");
+        } else if(masterCardBtn.checked){
+            console.log("lu bayar pake Master Card");
+        } else if (paypalBtn.checked){
+            console.log("lu bayar pake Paypal");
+        } else {
+            console.log ("pilih salah satu metode pembayaran");
+        }
+    };
+    </script>
+  </body>
+</html>

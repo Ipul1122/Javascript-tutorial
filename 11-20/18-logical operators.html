@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>operator logical</title>
+  </head>
+  <body>
+    <script>
+      // gives us the ability to chect more than 1 condition concurrently
+      // && AND ( BOTH conditions must be true)
+      // || OR  (Either conditions can be true)
+
+        let temp = 20;
+        let sunny = true;
+
+    /* operator && AND
+        Jika temp lebih dari 0 dan kurang dari 30
+        maka cuaca hari ini bagus,
+        jika kurang dari 0 dan lebih dari 30
+        maka cuacanya tidak bagus
+    */
+    if (temp >= 0 && temp <= 30 && sunny) {
+        console.log('cuaca hari ini bagus');
+    } else {
+        console.log('cuaca tidak bagus');
+    }
+
+    let suhu = 31;
+    let kelembapan = false;
+   
+    /* operator || OR
+        Jika suhu  kurang dari 0 sampai lebih 30
+        maka cuacanya tidak bagus,
+        jika kurang dari 0 sampai atau lebih dari 30
+        maka cuacanya bagus
+    */
+    if (suhu <= 0 || suhu >= 30 || kelembapan) {
+        console.log('cuaca tidak  bagus');
+    } else {
+        console.log('cuaca hari ini bagus');
+    }
+    </script>
+  </body>
+</html>

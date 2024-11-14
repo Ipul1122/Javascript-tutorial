@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variabel & data type</title>
+</head>
+<body>
+    
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+
+<script>
+
+// A variabel is a container for storing data => Variabel merupakan wadah untuk menyimpan data
+// A variabel behaves as if it was the value that it contains => Suatu variabel berperilaku seolah-olah itu adalah nilai yang dikandungnya
+
+// two steps :
+// 1. Declaration (var, let, const)
+// 2. Assigment ( = assigment operator)
+
+let namaPanjang = "Muhammad Syaifulloh"; //string
+let umur = 21; //numbers or integer
+let mahasiswa = false; //boolean
+
+// menambahkan angka selanjutnya
+umur = umur +1;
+
+
+// jika variabel tidak memiliki value maka akan menjadi undifined atau tidak ada nilai
+console.log("Halo", namaPanjang);
+console.log("umur lu", umur, "tahun");
+console.log("enrolled", mahasiswa);
+
+// memanipulasi elemen html p1, p2 dan p3
+document.getElementById("p1").innerHTML = "halo " + namaPanjang;
+document.getElementById("p2").innerHTML = "umur lu " + umur + " tahun ";
+document.getElementById("p3").innerHTML = "enrolled " + mahasiswa;
+
+
+</script>
+
+
+</body>
+</html>

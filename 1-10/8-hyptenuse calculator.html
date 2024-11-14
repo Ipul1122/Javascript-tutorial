@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hyptenuse calculator</title>
+  </head>
+  <body>
+    <label id="aLabel">Sisi A</label><br />
+    <input type="text" id="aTextBox" /><br />
+    <label id="bLabel">Sisi B</label><br />
+    <input type="text" id="bTextBox" /><br />
+    <button type="cLabel" id="submitButton">SUBMIT</button> <br />
+    <label id="cLabel"></label><br />
+
+    <script>
+      let a;
+      let b;
+      let c;
+
+      // a = window.prompt('masukkan sisi A');
+      // a = Number(a);
+
+      // b = window.prompt('masukkan sisi B');
+      // b = Number(b);
+
+      // c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+      // console.log(" sisi C :", c);
+
+      /*
+            CARA MENGETAHUI SISI C DARI SEGITIGA SIKU SIKU
+            
+            c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+            a = 3 (value yang dimasukkan) x 3 karna bilangan pangkat 2
+            b = 4 (value yang dimasukkan) x 4 karna bilangan pangkat 2
+
+            3 x 3 = 9
+            4 x 4 = 16
+
+            9 + 16 = 25, akar dari 25 adalah 5
+        */
+
+      // MENAMPILKAN DI WEBSITE
+
+      document.getElementById('submitButton').onclick = function () {
+
+        a = document.getElementById("aTextBox").value;
+        a = Number(a);
+
+        b = document.getElementById("bTextBox").value;
+        b = Number(b);
+
+        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+        document.getElementById("cLabel").innerHTML = "Sisi C: " + c;
+
+      };
+    </script>
+  </body>
+</html>

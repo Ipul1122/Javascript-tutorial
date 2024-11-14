@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>type conversion</title>
+  </head>
+  <body>
+    <script>
+      // type conversion = change the datatype of a value to another
+      //                   (strings, numbers, booleans)
+
+      
+      let umur = window.prompt('berapa umur lu?');
+      
+      // mengubah string menjadi integer/number
+      //console.log(typeof umur); // string
+      umur = Number(umur); //converting string to number
+      umur += 1;
+      console.log(typeof umur); //number
+
+      console.log('selamat ulang tahun! umur lu sekarang', umur, 'tahun');
+
+    let x;
+    let y;
+    let z;
+
+    x = Number("3.14"); //konversi dari string ke number dan jika value bukan angka maka terjadi NaN
+    y = String(3.14); //konversi  dari number ke string
+    z = Boolean("3.14"); //jika value kosong maka terjadi false
+
+    console.log(x, typeof x);
+    console.log(y, typeof y);
+    console.log(z, typeof z);
+    
+    </script>
+  </body>
+</html>

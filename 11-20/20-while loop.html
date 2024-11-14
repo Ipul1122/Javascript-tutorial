@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>while loop</title>
+  </head>
+  <body>
+    <script>
+      // while loop = repeat some code
+      //              while some condition is true
+      //              potentially infinite
+
+        let userName = "";
+
+        // masukkan nama dan nama tidak boleh , jika ada akan peringatkan oleh si null
+        while(userName == "" || userName == null){
+            userName = window.prompt("masukkan nama lu");
+        }
+
+        console.log("Halo", userName);
+
+        // // looping tak terbatas
+        // while (1 == 1){
+        //     console.log("tolong saya kejebak looping");
+        // }
+    </script>
+  </body>
+</html>
