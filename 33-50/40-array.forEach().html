@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array.forEach()</title>
+</head>
+<body>
+
+    <script>
+
+        // array.forEach() = executes a provide callback function
+        //                   once for each array element
+        
+        // array.forEach() = memanggil semua isi dari data array
+
+        // membuat array yang berisikan nama nama students
+        let students = ["spongebob", "patrick", "squidward"];
+        students.forEach(capitalize);
+        students.forEach(print);
+
+        //  fungsi capitalize mengubah string menjadi huruf kapital
+        function capitalize (element, index, array){
+            // array [index] => memanggil semua isi  array
+            // elemet [0].toUpperCase => memanggil array index ke 0 dan merubah nya menjadi huruf besar
+            // element.substring(1) => menjabarkan semua teks dan  mulai dari indeks ke 1 yaitu  dari huruf s,p,s setelah huruf besar index 0 yaitu S,P,S
+            array[index] = element [0].toUpperCase() + element.substring(1);
+        }
+
+        function print(element){
+            console.log(element)
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Array</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // 2D arrays = An array of arrays
+
+        let fruits = ["apple", "banana", "orange"]; // index column : 0   -------> [0]
+        let vegetables = ["carrots", "potatoes", "garlic"]; // index column : 1    -------> [1]
+        let meats = ["eggs", "chicken", "fish"]; // index column : 2       ------> [2]
+
+        let groceryList = [fruits, vegetables, meats];
+
+        /*  
+        kotak index pertama memanggil column index arrray => [] 
+        kotak index kedua memanggil isi value index array => []
+        isi di dalam index column dan value di index array bisa di ubah sesuai yang kita mau
+        */
+        groceryList[0][0] = "grape"; // index apple mejadi grape
+
+        for(let list of groceryList){
+            // menjabarkan semua index di dalam array
+            for(let food of list){
+                console.log(food);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

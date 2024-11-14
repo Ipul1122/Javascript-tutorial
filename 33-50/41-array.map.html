@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array map</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // array.map() = executes a provided calback function
+        //              once for each array element
+        //              AND creates a new array
+
+        // array berisi 5 angka
+        let numbers = [1,2,3,4,5,];
+        let squares = numbers.map(square);
+        let cubes = numbers.map(cube);
+
+        squares.forEach(print);
+        cubes.forEach(print);
+
+        //  membuat function dengan nama variabel squear dan parameter element
+        function square(element){
+            // mengembalikan matematika pangkat 2
+            return Math.pow(element, 2);
+        }
+
+        function cube(element) {
+            return Math.pow(element, 3);
+        }
+
+        function print(element){
+            console.log(element);
+        }
+
+    </script>
+
+
+</body>
+</html>

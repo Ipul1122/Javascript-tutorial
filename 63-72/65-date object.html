@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    
+    <label id="myLabel"></label>
+
+    <script>
+
+        // the Date object is used to work with dates & times
+
+        let date = new Date();
+        // let date = new Date(10000000); 
+        // let date = new Date(2023, 0, 1,2,3,4,5);
+        // let date = new Date("January 1, 2023  00:00:00");
+
+        // let year = date.getFullYear();
+        // let dayOfMonth = date.getDate();
+        // let dayOfWeek = date.getDay();
+        // let month = date.getMonth();
+        // let hour = date.getHours();
+        // let minutes = date.getMinutes();
+        // let seconds = date.getSeconds();
+        // let miliseconds = date.getMilliseconds( );
+
+        // date.setFullYear(2024);
+        // date.setMonth(12)
+        // date.setDate(30)
+        // date.setHours(23)
+        // date.setMinutes(45);
+        // date.setSeconds(20);
+        // date.setMilliseconds(0);
+
+
+        //date = date.toLocaleString(); // mengubah menjadi sesuai hari/bulan/tahun. pukul waktu detik/menit/jam
+        
+        // diimplentasikan dari console => ke website
+        document.getElementById("myLabel").innerHTML = formatTime(date);
+
+        function formatData(date){
+            let year = date.getFullYear();
+            let month = date.getMonth() + 1;
+            let day = date.getDate();
+
+            return `${month}/${day}/${year}`;
+        }
+
+        function formatTime(date){
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+            let amOrPm = hours >= 12 ? "pm"  : "am";
+
+            hours = (hours % 12) || 12;
+
+            return `${hours}:${minutes}:${seconds}  ${amOrPm}`;
+        }
+
+    
+
+
+
+
+        //console.log(date);
+
+    </script>
+</body>
+</html>

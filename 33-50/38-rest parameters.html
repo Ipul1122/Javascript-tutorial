@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest parameters</title>
+</head>
+<body>
+
+    <script>
+
+        // rest parameters : 
+        // represents an indenfinite number of paramaters
+        // ... (packs arguments info an array)
+
+        let a = 1;
+        let b = 2;
+        let c = 3;
+        let d = 4;
+        let e = 5;
+
+        // memanggil dan membuat paramaters sum dari value a - e
+        console.log(sum(a,b,c,d,e))
+    
+        //  buat function dan panggil sum, 
+        // jika di dalam kurung terdapat value (x,y) maka value diatas sebelumnya a dan b akan di hapus
+        function sum(x,y,...numbers){
+            let total = 0;
+            for(let number of numbers){
+                // menjumlahkan semua angka
+                total += number
+            }
+            // mengembalikan total
+            return total
+        }
+    
+    </script>
+    
+</body>
+</html>

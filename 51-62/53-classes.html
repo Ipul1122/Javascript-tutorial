@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes</title>
+</head>
+<body>
+
+    <script>
+
+        // class = A blueprint for creating object
+        //       define what properties and methods they have
+        //       use a constructor for unique properties
+
+        //class = blueprint untuk membuat objek
+        // tentukan properti dan metode apa yang mereka miliki
+        // menggunakan konstruktor untuk properti unik
+
+        /* blueprint = Blueprint atau cetak biru adalah 
+        sebuah kerangka kerja terperinci sebagai 
+        landasan dalam pembuatan, penyusunan strategi, 
+        pelaksanaan program, dan fokus kegiatan serta 
+        langkah-langkah atau implementasi yang harus dilakukan 
+        oleh unit lingkungan kerja.
+        */
+
+        class Player{
+            score = 0;
+
+            pause(){
+                console.log("You pause the game");
+            }
+            exit(){
+                console.log("You exit the game");
+            }
+        }
+
+        const player1 = new Player();
+        const player2 = new Player();
+        const player3 = new Player();
+        const player4 = new Player();
+
+        player1.score += 1;
+
+        console.log(player1.score);
+        console.log(player2.score);
+
+        player1.pause();
+        player2.exit();
+
+    </script>
+    
+</body>
+</html>

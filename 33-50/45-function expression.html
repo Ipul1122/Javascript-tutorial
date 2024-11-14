@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function expression</title>
+</head>
+<body>
+
+    <!-- <label id="myLabel">0</label><br />
+    <button id="tombolTambah" >Tambah</button>
+    <button id="tombolKurang" >Kurang</button> -->
+
+    <label id="labelSaya">0</label>
+    <button id="tekanTambah" onclick="tekanTambah()">Tambah</button>
+    <button id="tekanKurang" onclick="tekanKurang()">Kurang</button>
+
+    <script>
+
+        // function expression = function without a name ( anonymous function )
+        //                        avoid polluting the global scope with names
+        //                        write it, then forget about it
+
+let angka = 0;
+
+function tekanTambah(){
+    angka+=1;
+    document.getElementById("labelSaya").innerHTML = angka;
+}
+
+function tekanKurang(){
+    angka-=1;
+    document.getElementById( "labelSaya" ).innerHTML = angka;
+}
+    
+
+
+
+
+
+
+// // document.getElementById("tombolTambah").onclick = function () {
+// //     angka+=1;
+// //     document.getElementById( "myLabel" ).innerHTML = angka;
+// // }
+// // document.getElementById("tombolKurang").onclick = function () {
+// //     angka-=1;
+// //     document.getElementById( "myLabel" ).innerHTML = angka;
+// }
+
+    
+
+
+
+
+
+// EXAMPLES
+
+    
+    
+    
+    
+    
+    
+    // const gretting = function(){
+    //     console.log("Welcome!")
+    // }
+
+    // gretting();
+    </script>
+    
+</body>
+</html>

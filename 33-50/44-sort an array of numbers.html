@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort an array of numbers</title>
+</head>
+<body>
+
+    <script>
+
+// membuat value array yang berantakan menjadi rapih
+// seperti angka 50 - 100 secara acak penempatan
+// dan memakai sort an array of numbers untuk  mengurutkan isi dari array tersebut
+
+        let grades = [100, 50, 90, 60, 80, 70];
+
+        grades = grades.sort(mulaiDari);
+        //grades = grades.sort(AkhirDari);
+
+        grades.forEach(print);
+
+        function mulaiDari(x,y){
+            return y - x;
+        }
+
+        // function AkhirDari(x,y){
+        //     return x - y;
+        // }
+
+        function print (element) {
+            console.log(element);
+        }
+
+    </script>
+    
+</body>
+</html>

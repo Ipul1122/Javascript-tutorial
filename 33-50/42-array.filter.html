@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array filter</title>
+</head>
+<body>
+    
+<script>
+
+    // array.filter() = creates a new array with all elements
+    //                  that pass the test provided by a function
+
+    // array ages dari 16 sampai 90
+    let ages = [18, 16, 21, 17, 19, 90];
+    // memfilter ages orang dewasa yaitu 18+ tahun
+    let adults = ages.filter(checkAge);
+
+    //variabel adult akan di pengulangan/loop sampai nilai yang di panggil itu true
+    adults.forEach(print);
+
+    // membuat function dengan variabel chechAge dan param element
+    // mengembalikan param element jika ages lebih dari 18+
+    function checkAge(element){
+        return element >= 18;
+    }
+
+    //  fungsi print untuk mencetak isi variabel adults di console
+    function print(element){
+        console.log(element);
+    }
+
+</script>
+
+
+</body>
+</html>

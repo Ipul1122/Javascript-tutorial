@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error handling</title>
+</head>
+<body>
+
+
+    <script>
+
+        // error = object with a description of
+        //         something went wrong
+
+        //         Cant't open a file
+        //         Lose Connection
+        //         User types incorrect input
+        //         TypeError
+
+
+        //console.lag() //typeError
+
+        try{
+            let x = window.prompt("Enter a number"); ;
+            x =Number(x);
+
+            // mengalihkan kosakata NaN menjadi That wasn't a number
+            // jika seseorang memasukan selain number
+            if(isNaN(x)) throw "That wasn't a number!"
+            
+            // jika tidak ada value yang diisi 
+            // maka akan muncul "That was empty"
+            if(x == "") throw "That was empty"
+
+
+            console.log(`${x} is a number`);
+        }
+
+        
+        catch(error){
+            console.log(error);
+        }
+
+        finally{
+            console.log("This Always excutes")
+        }
+    </script>
+    
+</body>
+</html>

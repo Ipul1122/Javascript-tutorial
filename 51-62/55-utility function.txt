@@ -1,0 +1,10 @@
+Dalam pemrograman JavaScript, fungsi utilitas (utility function) adalah fungsi yang dirancang untuk melakukan tugas umum atau berulang yang sering dibutuhkan dalam pengembangan perangkat lunak. Fungsi-fungsi ini biasanya kecil dan terfokus, dan sering kali digunakan untuk menyederhanakan kode dan membuatnya lebih mudah dibaca dan dipelihara.
+
+Beberapa contoh umum fungsi utilitas JavaScript meliputi:
+
+Memeriksa tipe data: Fungsi untuk memeriksa tipe data variabel, seperti typeof(), isArray(), dan isObject().
+Manipulasi string: Fungsi untuk memformat string, seperti toUpperCase(), toLowerCase(), dan trim().
+Bekerja dengan tanggal dan waktu: Fungsi untuk memformat tanggal dan waktu, seperti Date.now(), Date.parse(), dan dateFormat().
+Operasi matematika: Fungsi untuk melakukan operasi matematika dasar, seperti Math.abs(), Math.pow(), dan Math.random().
+Penyimpanan lokal: Fungsi untuk menyimpan dan mengambil data dari penyimpanan lokal browser, seperti localStorage dan sessionStorage.
+Fungsi utilitas dapat ditulis oleh programmer sendiri, atau dapat ditemukan di pustaka pihak ketiga seperti Lodash atau Underscore. Menggunakan pustaka pihak ketiga dapat menghemat waktu dan tenaga, dan memastikan bahwa Anda menggunakan kode yang teruji dan tepercaya.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tenary operation</title>
+</head>
+<body>
+
+
+    <script>
+
+        // ternary operator = shortcut for an  "if/else statement"
+        //                    takes 3 operands
+
+        //                  1. a condition with ?
+        //                  2. expression if true :
+        //                  3. exression if false
+
+        //  condition ? exprIfTrue : exprIfFalse
+
+        // JALUR PINTAS UNTUK LEBIH CEPAT DAN SIMPEL MENGGUNAKAN TERNARY OPERATION
+        // DIBADING IF/ELSE STATEMENT
+
+        
+        
+        /*
+        kondisi dimana jika true terjadi menang,
+        jka false terjadi kalah
+        */
+
+        // Memiliki function siapaPemenang dan parameter false yaitu boolean true/false
+        siapaPemenang(false);
+
+        // memanggil function siapaPemenang dan di isi variabel menang
+        function siapaPemenang(menang){
+            // jika menang, tampilkan "lu menang" jika kalah, tampilkan "lu kalah"
+            // output yang dihasilkan sesuai dengan boolean  
+            menang ? console.log("lu menang") : console.log("lu kalah");
+        }
+        
+        
+        
+        
+        // variabel dewasa memiliki function periksaUmur dan parameter 12
+        let dewasa = periksaUmur(12);
+        
+        // memanggil fucntion periksaUmur dan parameter umur
+        function periksaUmur(umur){
+            // mengembalikan nilai 18, jika umur lebih dari 18 maka true, jika umur di bawah 18 maka false
+            return umur >= 18 ? true : false;
+        }
+        
+        /*
+            kondisi dimana jika umur lebih dari 18,
+            maka akan true dan juga sebaliknya
+        */
+
+        // tampilkan output di console
+        console.log(dewasa);
+
+
+        </script>
+    
+</body>
+
+</html>

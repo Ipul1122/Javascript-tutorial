@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<body>
+    
+    <script>
+
+        // this = reference to a particular object
+        //        the object depends on the immediate context
+
+        // this = referensi ke objek tertentu
+        //        objek bergantung pada konteks langsungnya
+
+
+
+// menampilkan di window
+this.name = "myCoolWindow"
+
+
+console.log(this.name); //menampilkan di console
+
+
+
+
+
+
+
+// EXAMPLE
+
+
+//         const car1 = {
+//             // property
+//             model:"Tesla Model 3",
+//             color:"Red",
+//             year:2023,
+
+//             // methods
+//             drive : function(){
+//                 console.log(`You drive the ${this.model}`)
+//             }
+//         }
+
+//         const car2 = {
+//             // property
+//             model:"Mustang",
+//             color:"Grey",
+//             year:2024,
+
+//             // methods
+//             drive : function(){
+//                 console.log(`You drive the ${this.model}`);
+//             }
+//         }
+
+
+
+/* nama variable berbeda tapi 
+properti sama bisa menggunanakan  
+this untuk memanggil properti
+yang sama dari objek lain
+*/
+
+
+// car1.drive();
+// car2.drive();
+
+
+    </script>
+
+</body>
+</html>

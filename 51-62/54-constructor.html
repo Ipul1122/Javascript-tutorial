@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+
+    <script>
+
+        // constructor = a special method of a class,
+        //              accepts arguments and assigns properties
+
+        // constructor
+        class Student{
+
+            // di dalam data student, ada apa aja
+            constructor(name,age, address){
+                this.name = name;
+                this.age  = age;
+                this.address = address;
+            }
+            study(){
+                // this.name =>  person name
+                console.log(`${this.name} is studying`);
+            }
+        }
+
+        // membuat  objek baru dari class Student yaitu name,age,addres
+        const student1 = new Student("ipul", 23, "jakarta");
+        // membuat  objek baru dari class Student yaitu name,age,addres
+        const student2 = new Student("rendy", 21, "bogor");
+        // membuat  objek baru dari class Student yaitu name,age,addres
+        const student3 = new Student("fabrian", 22, "palmerah");
+
+        console.log(student1.name);
+        console.log(student1.age);
+        console.log(student1.address);
+        // menampilkan di console, memanggil data method study
+        student1.study();
+
+
+
+
+        console.log(student2.name);
+        console.log(student2.age);
+        console.log(student2.address);
+        // menampilkan di console, memanggil data method study
+        student2.study();
+
+
+        console.log(student3.name);
+        console.log(student3.age);
+        console.log(student3.address);
+        // menampilkan di console, memanggil data method study
+        student3.study();
+
+    </script>
+    
+</body>
+</html>

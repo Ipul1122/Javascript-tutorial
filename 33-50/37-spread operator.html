@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operator</title>
+</head>
+<body>
+    
+<script>
+
+    /* spread operator : 
+    allows an iterable such as an  ... array or string to be expanded
+    in places where zero or more arguments are expected ( unpacks the elements )
+    */
+
+    //let userName = "ipul";
+    // ... membuat string atau nomer memiliki jarak antar huruf/angka
+    //console.log(...userName);
+    
+    
+    // let numbers = [1,2,3,4,5,6,7,8,9];
+    // // mencari tahu nilai tertinggi dan tanpa ...numbers maka value akan menjadi NaN
+    // let maximum = Math.max(...numbers);
+    // console.log(maximum);
+
+    let class1 = ["ipul", "aldi", "rendi"];
+    let class2 = ["lestari", "nanda", "khoirun"];
+
+    // ...class1 dan ...class2 bergabung menjadi satu array
+    class1.push(...class2);
+    console.log(...class1)
+
+</script>
+
+</body>
+</html>

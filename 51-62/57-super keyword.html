@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>super keyword</title>
+</head>
+<body>
+
+    <script>
+
+        // super = Refers to the parent class.
+        //         commonly used to invoke constructor of a parent class
+
+        // Parent Class
+        class Animal {
+
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+        }
+
+        //  Child Class 
+        class Rabbit extends Animal {
+            constructor(name,age,runSpeed){
+                super(name,age);
+                this.runSpeed = runSpeed;
+            }
+        }
+        
+        class Fish extends Animal {
+            constructor(name,age,swimSpeed){
+                super(name,age);
+                this.swimSpeed= swimSpeed;
+            }
+
+        }
+        
+        class Hawk extends Animal {
+            
+            constructor(name,age,flySpeed){
+                super(name,age);
+                this.flySpeed= flySpeed;
+            }
+        }
+
+        const rabbit = new Rabbit("rabbit", 1, 40);
+        const fish = new Fish("fish", 2, 80);
+        const hawk = new Hawk("hawk", 3, 100);
+
+
+        console.log(rabbit.name);
+        console.log(rabbit.age);
+        console.log(rabbit.runSpeed);
+
+        console.log(fish.name);
+        console.log(fish.age);
+        console.log(fish.swimSpeed);
+
+        console.log(hawk.name);
+        console.log(hawk.age);
+        console.log(hawk.flySpeed);
+
+    </script>
+    
+</body>
+</html>

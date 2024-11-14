@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>var & let</title>
+  </head>
+  <body>
+   
+    <script>
+
+/* -----------------------------------------------------------------
+      // ENGLISH
+
+      // variable scope = where a variable is accessible
+
+      // let = variable are limited to block scope {}
+      // var = variable are limited to a function (){}
+
+    // global variable = is declared outside any function
+    //  (if global, var will CHANGE browser's window properties)
+ ----------------------------------------------------------------- */
+
+ /* -----------------------------------------------------------------
+      INDONESIA
+
+      Variabel scope = dimana sebuah variable dapat di aksebilitasi
+
+      // let = variabel yang terbatas dalam block scope
+      // var = variabel yang terbatas pada fungsi (function) {}
+
+      apa itu block scope? 
+      Block scope adalah cara untuk membatasi ruang lingkup variabel di dalam program. 
+      Variabel yang dideklarasikan di dalam block scope hanya dapat diakses di dalam blok kode tersebut, 
+      dan tidak dapat diakses di luar blok kode tersebut. 
+      Hal ini membantu untuk menghindari konflik nama variabel dan membuat kode yang lebih modular.
+
+      apa itu fungsi (function) {
+        var tidak memiliki limitasi khusus terhadap function. 
+        Variabel var dapat diakses di mana pun di dalam fungsi tempat variabel tersebut dideklarasikan, 
+        termasuk di dalam blok kode di dalam fungsi tersebut. 
+        Hal ini dapat menyebabkan masalah dengan redeklarasi dan hoisting, 
+        yang dapat membuat kode menjadi sulit dipahami dan rawan bug.
+      }
+
+      global variabel = dideklarasikan diluar apapun nama function
+      (jika global, var akan menggantikan browser ke properti window)
+  -----------------------------------------------------------------*/
+
+        
+
+      // EXAMPLE I
+
+        // perulangan hanya sampai 3 angka
+        for(let i = 1; i <= 3; i+=1){
+    console.log(i);
+        }
+        // perulangan sampai angka 4 
+        for(var i = 1; i <= 3; i+=1){
+    console.log(i);
+        }
+
+    console.log(i);//output: undefined because the i in this loop is not defined globally
+
+
+
+        // EXAMPLE II
+        function tesVarLet() {
+  // Deklarasi var di awal fungsi (function scope)
+  var x = 10;
+
+  if (true) {
+    // Deklarasi let di dalam blok if (block scope)
+    let y = 20;
+    console.log("Di dalam if:", x, y); // x dan y bisa diakses
+  }
+
+  console.log("Di luar if:", x,); // x bisa diakses (karena function scope)
+  // console.log("Di luar if:", y); // akan error (y tidak bisa diakses karena block scope)
+}
+
+tesVarLet();
+
+
+
+
+
+    </script>
+  </body>
+</html>

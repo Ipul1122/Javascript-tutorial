@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console.time</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // console.time() = Starts a timer you can use to
+        //                  track how long an operation takes
+        //                  Give each timer a unique name
+
+        // START
+        console.time("Response time");
+
+        // munculkan alert untuk klik button
+        alert("Click the Ok Button");
+        // setelah di klik maka akan muncul hello dalam 3 detik
+        setTimeout(() => console.log("hello"), 3000);
+
+        // end  of the timer - menunjukkan berapa lama waktu yang diperlukan
+        console.timeEnd("Response time");
+
+    </script>
+</body>
+</html>

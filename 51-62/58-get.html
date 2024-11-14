@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // get = binds an object property to a function
+        //      when that property is accessed _
+
+        // get = mengikat properti object ke suatu function
+        //      ketika properti itu diakses _
+
+        class Car{
+            constructor(power){
+                this._gas = -100;
+                this._power = power;
+            }
+            get power(){
+                return `${this._power}hp `;
+            }
+            get gas(){
+                return `${this._gas} (${this._gas / 50 * 100}%) `;
+            }
+
+            set gas(value){
+                if(value > 50){
+                    value = 50;
+                } else if ( value < 0) {
+                    value = 0;
+                }
+                this._gas = value
+            }
+        }
+
+        let car = new Car(400);
+
+        car.gas = 10000000000;
+        
+
+        console.log(car.power);
+        console.log(car.gas);
+    </script>
+</body>
+</html>

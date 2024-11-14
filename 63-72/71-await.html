@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+
+    <h1 id="myH1"></h1>
+
+    <script>
+
+        // async = makes a function return a Promise
+        // await = makes a function wait for a Promise
+
+        
+        async function loadFile(){
+
+            const promise = new Promise((resolve, reject) => {
+                
+                let fileLoaded = true;
+    
+                if(fileLoaded){
+                    resolve("file loaded");
+                }
+                else {
+                    reject("file not loaded");
+                }
+            })
+
+            try{
+            document.getElementById("myH1").innerHTML = await promise;
+        }
+            catch(error){
+            document.getElementById("myH1").innerHTML = error;
+        }
+    }   loadFile();
+
+
+                
+    </script>
+    
+</body>
+</html>

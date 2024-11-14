@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array reduce</title>
+</head>
+<body>
+
+    <script>
+
+        // array.reduce() = reduces an array to a single value
+
+        // value array banyak menjadi satu 
+        let prices = [5,10,15,20,25,30];
+        let total = prices.reduce(checkOut);
+
+        console.log(`the total is: ${total}`);
+
+        function checkOut(total,element){
+            return total + element;
+        }
+
+    </script>
+    
+</body>
+</html>

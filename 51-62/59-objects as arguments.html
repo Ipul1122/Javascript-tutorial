@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects as arguments</title>
+</head>
+<body>
+
+    <script>
+
+        class Car{
+            constructor(model, year, color){
+                this.model = model;
+                this.year = year;
+                this.color = color;
+            }
+        }
+
+        const car1 = new Car("Mustang", 2022, "red");
+        const car2 = new Car("Toyota", 2023, "blue");
+        const car3 = new Car("Avanza", 2022, "yellow");
+
+
+        // mengubah tipe warna mobil
+        changeColor(car3, "gold");
+
+        //  menampilkan informasi tentang kendaraan
+        displayInfo(car3);
+        
+        
+        // memanggil  function dengan mengirimkan object sebagai argument
+        function displayInfo(car) {
+            console.log(car.model); // Mustang
+            console.log(car.year); //2022
+            console.log(car.color);// red
+        }
+
+
+        function changeColor(car, color){
+            car.color = color;
+        }
+
+    </script>
+    
+</body>
+</html>

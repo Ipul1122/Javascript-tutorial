@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock program</title>
+</head>
+<body>
+
+    <label id="myLabel"></label>
+    <script>
+
+        const myLabel = document.getElementById( "myLabel" );
+        
+        update();
+        // menambah waktu 1+ detik
+        setInterval(update, 1000);
+
+
+        function update() {
+            let date = new Date();
+            myLabel.innerHTML = formatTime(date);
+
+            function formatTime(date){
+                let hours = date.getHours();
+                let minutes = date.getMinutes();
+                let seconds = date.getSeconds();
+                let amOrPm = hours >= 12 ? "malam" : "pagi";
+
+                hours = (hours % 12) || 12;
+
+                hours = formatZeroes(hours);
+                minutes = formatZeroes(minutes);
+                seconds = formatZeroes(seconds);
+
+                return `${hours}:${minutes}:${seconds} ${amOrPm}`; 
+            }
+        } 
+
+        function formatZeroes(time){
+            time = time.toString();
+            //  jika  time hanya memiliki satu digit, maka akan di tambahkan 0 
+            return time.lenght <2 ? "0"+ time: time ;
+        }
+
+    </script>
+    
+</body>
+</html>

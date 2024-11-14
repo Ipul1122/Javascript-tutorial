@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested loop</title>
+</head>
+<body>
+    
+    <label id="myRectangle"></label>
+
+    <script>
+
+        // nested loop = a loop inside of another loop
+
+        // masukkan sebuah simbol
+        let simbol = window.prompt("masukkan simbol");
+        // masukkan nilai vertikal
+        let rows = window.prompt("masukkan nilai kolom vertikal")
+        // masukkan nilai horizontal
+        let column = window.prompt("masukkan nilai kolom horizontal")
+
+        // lakukan perulangan vertikal 
+        for(let i = 1; i <=rows; i+=1){
+            // lakukan perulangan horizontal
+            for(let j = 1; j <=column; j+=1){
+                document.getElementById("myRectangle").innerHTML += simbol;
+            }
+            // lakukan perulangan vertikal
+            document.getElementById("myRectangle").innerHTML +='<br>'
+        }
+
+    </script>
+
+
+</body>
+</html>

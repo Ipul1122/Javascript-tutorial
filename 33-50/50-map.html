@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    
+<script>
+
+    // MAP = object that holds key-value pairs of any data type
+    // MAP = objek yang menyimpan pasangan nilai kunci dari tipe data apa pun
+
+    const store = new Map([
+    ["t-shirt", 20],
+    ["jeans", 30],
+    ["socks", 10],
+    ["underwear", 40]
+]);
+
+let shoopingCart = 0;
+
+//store.set("hat", 60); // menambahkan hat
+//store.delete("hat");  // menghapus hat
+//console.log(store.has("hat")); // cek apakah store memiliki  "hat" atau tidak (true/false)
+//console.log(store.size);    // melihat jumlah item di dalam map (4)
+
+    store.forEach((value,key) => console.log(`${key} $${value}`));
+
+</script>
+
+
+</body>
+</html>

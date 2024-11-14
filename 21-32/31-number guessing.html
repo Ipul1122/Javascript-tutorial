@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+</head>
+<body>
+    
+    <h1>Tebak Nomer</h1>
+    <p>tebak dari 1 - 10</p>
+    <label >Masukkan tebakan</label>
+
+    <input id="guessField"><br>
+    <input type="submit"  id="submitButton">
+        
+        <script>
+
+            
+            const answer = Math.floor(Math.random()  * 10 + 1); //membuat
+            let guesses = 0;
+
+            document.getElementById("submitButton").onclick = function() {
+                
+                let guess = document.getElementById("guessField").value 
+                guesses+=1;
+
+                if(guess == answer){
+                    alert(`${answer} jawaban yang kamu pilih adalah ${guesses} ditebak `);
+                } else if(guess < answer) {
+                    alert("terlalu kecil");
+                }else {
+                    alert("terlalu besar");
+                }
+            
+            }
+
+        </script>
+
+
+</body>
+</html>

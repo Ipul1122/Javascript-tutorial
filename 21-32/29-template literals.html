@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+<body>
+
+    <label id="myLabel"></label>
+    
+    <script>
+
+        // Template Literals = delimited with (`)
+        //                      instead of double or single quotes
+        //                      allows embedded variables and expression
+        
+        
+        let userName = "ipul";
+        let items = 10;
+        let total = 150000;
+
+        // console.log("Halo", userName);
+        // console.log("barang mu", items, "sudah di dalam keranjang");
+        // console.log("total lu sekitar", total, "rupiah");
+
+
+        // console.log(`Halo ${userName}`);
+        // console.log(`barang mu ${items} sudah di dalam keranjang` );
+        // console.log(`total lu sekitar ${total}`);
+
+let text = 
+`halo ${userName} <br>
+barang mu ${items} sudah di dalam keranjang <br>
+total lu sekitar ${+total} <br> ` ; 
+
+console.log(text);
+
+document.getElementById("myLabel").innerHTML = text;
+    </script>
+
+</body>
+</html>

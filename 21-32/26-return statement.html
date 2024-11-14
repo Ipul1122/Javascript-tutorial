@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return statement</title>
+</head>
+<body>
+
+<script>
+
+    // return = returns a value back to the place
+    //          where you invoked a function
+
+    // return = mengembalikan nilai ke tempatnya
+    // di mana Anda memanggil suatu fungsi
+
+    // memiliki variabel area, width dan height
+    let area;
+    let width;
+    let height;
+
+    // memunculkan perintah untuk masukkan nilai lebar
+    width = window.prompt("masukkan lebar");
+    // memunculkan perintah untuk masukkan nilai tinggi
+    height  = window.prompt("masukkan tinggi");
+
+    // di dalam variabel area memiliki function getArea 
+    // yang bermaksud untuk menentukan berapa width dan height
+    // width dan height adalah parameter
+    area = getArea(width, height);
+
+    // memanggil function getArea untuk menentukan nilai width dan height
+    function getArea(width, height){
+        // mengembalikan nilai ke tempatnya yaitu width * height
+        return width * height;
+    }
+    
+    // output adalah "luasnya adalah  : " + area
+    console.log("luasnya adalah " , area);
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+
+    <script>
+
+        // array = think of it as a varible
+        //          that can store multiple value
+
+        let buah = ["apel","jeruk", "mangga"] ;
+
+        buah.push ("durian");  // index array ke bagian terakhir
+        buah.pop();             // menghapus index terakhir pada array
+        buah.unshift("kelapa"); // index array ke pertama
+        buah.shift();           //  menghapus index pertama pada array
+        console.log(buah);  
+
+        let length = buah.length; //  memeriksa jumlah elemen pada array
+        let index = buah.indexOf("apel"); // memeriksa  posisi index didalam array
+
+        console.log(index)
+    </script>
+    
+</body>
+</html>

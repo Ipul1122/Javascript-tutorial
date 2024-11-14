@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+</head>
+<body>
+
+<script>
+
+    // static = belongs to the class, not the objects
+    //          properties : useful for caches, fixed configuration
+    //          methods : useful for utility functions
+
+    // static = memilik class, bukan objeknya
+    //          properti : berguna untuk cache, konfigurasi tetap
+    //          methods : berguna untuk fungsi utilitas
+
+    
+
+
+    class Car{
+
+        static numberOfCars = 0;
+        constructor(model){
+            this.model = model;
+            Car.numberOfCars +=1;
+        }
+
+        // utility function
+        static startRace(){
+            console.log("3....2....1...GO")
+        }
+    }
+
+    const car1 = new Car("mustang");
+    const car2 = new Car("tesla");
+    const car3 = new Car("avanza");
+    const car4 = new Car("ferrari");
+    const car5 = new Car("BMW");
+
+    // menghitung berapa jumlah cars
+    // console.log(Car.numberOfCars);
+
+
+    // utility function
+    Car.startRace();
+</script>
+
+    
+</body>
+</html>

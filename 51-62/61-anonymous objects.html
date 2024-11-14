@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Objects</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Anonymous Objects = Object without a name
+        //                      Not directly refereced
+        //                      Less syntax. No need for unique names
+
+        class Card{
+            constructor(value, suit, color){
+                this.value = value;
+                this.suit = suit;
+                this.color = color;
+            }
+        }
+
+
+        
+        
+        // ANONYMOUS OBJECT, KARENA TIDAK ADA VARIABLENYA
+        let cards = [new Card("A", "Hearts", "red"), 
+                    new Card("A", "Spades", "black"),
+                    new Card("A", "Diamonds", "red"),
+                    new Card("A", "Clubs", "black"),
+                    new Card("2", "Hearts", "red"),
+                    new Card("2", "Spades", "black"),
+                    new Card("2", "Diamonds", "red"),
+                    new Card("2", "Clubs", "black")
+                ];
+        
+                    
+        //console.log(cards[1].value + cards[1].suit);
+
+
+        cards.forEach(card => console.log(`${card.value} ${card.suit} ${card.color}`));
+
+    </script>
+</body>
+</html>

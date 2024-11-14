@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+<body>
+
+    <script>
+
+        // setInterval = invokes a function repeatedly after a number of miliseconds
+        //              asynchronous function (doesn't pause execution)
+
+        // angka mulai dari 0
+        let count = 0;
+        // memerintahkan untuk input 
+        let max = window.prompt("count up to what ?");
+        // variabel max harus number/integer
+        max = Number(max);
+
+        // 
+        const myTimer = setInterval(countUp, 1000);
+
+        // fungsi countUp, mulai dari 0,1,2,3 dan seterusnya sesuai yang diinputkan
+        function countUp(){
+            count +=1;
+            console.log(count);
+            if (count >= max){
+                // jika nilai input sudah  sampai dengan target maka berhenti menjalankan interval
+                clearInterval(myTimer);
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

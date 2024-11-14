@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomat Currency</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // HAPUS KOMEN UNTUK MEMULAI OPERASI 
+        // ERASE THE COMMENT TO START OPERATION
+
+        // ENGLIS :
+        // toLocalString() = returns a string with a languange
+        //                  sensitive representation of this number
+
+        // number.toLocalString(locale, { options });
+
+        // 'locale' = specify that language (undefined = default set in browser)
+        // 'options' = object with formatting options
+
+        // BAHASA INDONESIA
+
+        // toLocalString() = mengembalikan string dengan bahasa
+        //                   representasi sensitif dari nomor ini
+
+        // number.toLocalString(locale, { options });
+
+        // 'locale' = tentukan bahasa itu (tidak terdefinisi = default di browser)
+        // 'options' = objek dengan opsi pemformatan
+
+        let myNum = 20000.00;
+
+        // myNum = myNum.toLocaleString("en-US"); // US ENGLISH
+        // myNum = myNum.toLocaleString("de-DE") //Standard Germany
+
+        // myNum = myNum.toLocaleString("en-US",{style: "currency", currency: "USD"}); // USD  - United States Dollar
+        // myNum = myNum.toLocaleString("hi-IN",{style: "currency", currency: "INR"}); //  Indian Rupees - Hindi INDIA
+        // myNum = myNum.toLocaleString("de-DE",{style: "currency", currency: "EUR"}); //  Euro
+        // myNum = myNum.toLocaleString("id-ID",{style: "currency", currency: "IDR"}); //  Indonesia Rupiah
+
+        // myNum = myNum.toLocaleString(undefined, {style: "percent"}); //  Persentase
+
+        // myNum = myNum.toLocaleString(undefined, {style: "unit", unit: "celsius"}); //  Temperature Celcius
+
+        console.log(myNum);
+    </script>
+
+
+</body>
+</html
