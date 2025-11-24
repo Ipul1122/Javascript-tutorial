@@ -10,7 +10,7 @@ let users = [
 
 // Helper function to get user by ID
 function sendJson(res, statusCode, data){
-    res.writeHead(statusCode, {'Content-Type' : 'application/json'});
+    res.writeHead(statusCode, {'Content-Type' : 'application/json',});
     res.end(JSON.stringify(data));
 };
 
@@ -41,6 +41,19 @@ function parseBody(req){
 
 // Create HTTP server & Routing
 const server = http.createServer(async (req, res) =>{
+
+    // CORS ORIGIN BLOCKING HANDLER
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Izinkan akses dari semua origin (untuk development)
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Izinkan semua method HTTP
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Izinkan Content-Type header
+
+    // Tangani permintaan pre-flight (OPTIONS)
+    if (req.method === 'OPTIONS') {
+        res.writeHead(204); // Respon 204 No Content untuk pre-flight
+        res.end();
+        return;
+    }
+    
     const method = req.method;
     const url = req.url;
 
@@ -74,7 +87,7 @@ const server = http.createServer(async (req, res) =>{
             const body = await parseBody(req);
             const {name, age} = body;
 
-            if (name && age){
+            if (!name || !age){
                 return sendJson (res, 400, { message: 'Nama dan umur wajib diisi' });
             }
 

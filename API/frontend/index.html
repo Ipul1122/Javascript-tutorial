@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Fetch API Terstruktur</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <h1>Interaksi Frontend dengan API (Terstruktur)</h1>
+    <p>Lihat console browser (F12) untuk melihat hasil dari setiap request.</p>
+
+    <h2>GET Operations</h2>
+    <button id="pingBtn">1. GET /ping (Test Koneksi)</button>
+    <button id="getUsersBtn">2. GET /users (Ambil Semua User)</button>
+    
+    <hr>
+    
+    <h2>3. GET /users/:id</h2>
+    <div>
+        <label for="getUserId">User ID:</label>
+        <input type="number" id="getUserId" value="1" min="1">
+        <button id="getUserBtn">Ambil User</button>
+    </div>
+
+    <hr>
+    
+    <h2>4. POST /users (Buat User Baru)</h2>
+    <div>
+        <label for="postName">Nama:</label>
+        <input type="text" id="postName" placeholder="Masukkan Nama" value="Rendi Baru" required>
+    </div>
+    <div>
+        <label for="postAge">Umur:</label>
+        <input type="number" id="postAge" placeholder="Masukkan Umur" value="27" min="1" required>
+        <button id="postUserBtn">Buat User</button>
+    </div>
+    
+    <hr>
+
+    <h2>5. PUT /users/:id (Update User)</h2>
+    <div>
+        <label for="putId">User ID Target:</label>
+        <input type="number" id="putId" value="1" min="1">
+    </div>
+    <div>
+        <label for="putName">Nama Baru (Opsional):</label>
+        <input type="text" id="putName" placeholder="Kosongkan jika tidak diubah" value="Syaiful Updated">
+    </div>
+    <div>
+        <label for="putAge">Umur Baru (Opsional):</label>
+        <input type="number" id="putAge" placeholder="Kosongkan jika tidak diubah" min="1">
+        <button id="putUserBtn">Update User</button>
+    </div>
+    
+    <hr>
+
+    <h2>6. DELETE /users/:id (Hapus User)</h2>
+    <div>
+        <label for="deleteId">User ID yang akan dihapus:</label>
+        <input type="number" id="deleteId" value="2" min="1">
+        <button id="deleteUserBtn">Hapus User</button>
+    </div>
+
+    <script src="scripts/api.js"></script>
+</body>
+</html>
